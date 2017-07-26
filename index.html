@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title> Class 4 practice </title>
+        <style>
+            *{
+               margin: 0px;
+                padding: 0px;
+            }
+            
+            .menu{
+                min-height: 45px;
+                background-color: #0479AA;
+            }
+            .menu ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+            }
+            .menu ul li{
+                float: left;
+                border-right: 1px solid white;
+                border-left: 1px solid black;
+                position: relative;
+            }
+            .menu ul li:first-child{
+                border-left: none;
+            }
+            .menu ul li:last-child{
+                border-right: none;
+            }
+            .menu ul li a{
+                color: white;
+                text-decoration: none;
+                padding: 13px 83.2px;
+                display: block;
+                transition: 1s;
+            }
+            .menu ul li a:hover{
+                background-color: #0093D0; 
+                transform: scale(1.1)
+            }
+            
+            /* Dropdown menubar */
+            
+            .menu ul li ul{
+                background-color: #0479AA;
+                margin: 0px;
+                padding: 0px;
+                position: absolute;
+                left: -999999px;
+                width: 222.5px;
+            } 
+            .menu ul li:hover ul{
+                left: 0px;
+            }
+            .menu ul li ul li{
+                float: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 1px solid yellow;
+            } 
+            .menu ul li ul li:first-child{
+                border-top: 1px solid yellow;
+            }
+            .menu ul li ul li a{
+                padding: 13px 51.2px;
+            } 
+            .menu ul li ul li a:hover{} 
+            
+    /*    Gallery Design   */
+            .single_gallery{
+                width: 17.8%;
+                float: left;
+                margin: 1%;
+                height: 310px;
+            }
+            .photo_section{
+                width: 170px;
+                height: 200px;
+                margin: 40px auto;
+            }
+            .photo_section:hover img{
+                transform: scale(1.5);
+                 }
+            .photo_section img{
+               height: 170px;
+                width: 170px;
+                transition: 2s;
+            }
+            .caption{
+                text-align: center;
+            }
+            .caption p{
+                font-size: 18px;
+                font-weight: bold;
+                text-transform: inherit;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+         <div class="header"> 
+            <div class="menu_wrapper">
+                <div class="menu">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Courses</a>
+                            <ul>
+                                <li><a href="">Web Design</a></li>
+                                <li><a href="">Graphic Design</a></li>
+                                <li><a href="">Wordpress For All</a></li>
+                                <li><a href="">App Development</a></li>
+                                <li><a href="">Digital Marketing</a></li>
+                                <li><a href="">SEO</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Mentors</a></li>
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+             </div>
+        </div>
+        <div class="gallery">
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="web.png" alt="Image missing" >
+                </div>
+                <div class="caption">
+                    <p>Responsive Web Design</p>
+                </div>
+            </div>
+           <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="gra2.png" alt="Image missing" >
+                </div>
+                <div class="caption">
+                    <p>Graphic Design</p>
+                </div>
+            </div>
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="word.png" alt="Image missing" >
+                </div>
+                <div class="caption">
+                    <p>Wordpress</p>
+                </div>
+            </div>
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="an.png" alt="Image missing" >
+                </div>
+                <div class="caption">
+                    <p>Android App Dev.</p>
+                </div>
+            </div>
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="dg.png" alt="Image missing" >
+                </div>
+                <div class="caption">
+                    <p>Digital Marketing</p>
+                </div>
+            </div>
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="seo.png" alt="Image missing" >
+                </div>
+                <div class="caption">
+                    <p>Search Eng. Opt.</p>
+                </div>
+            </div>
+            <div class="single_gallery">
+                <div class="photo_section">
+                    <img src="web.png" alt="Image missing" >
+                </div>
+                <div class="caption">
+                    <p>Web Design (On.)</p>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
